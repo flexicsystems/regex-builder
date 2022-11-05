@@ -1,21 +1,15 @@
-# 🤘 Regex
+# 🤘 Regex Builder
 
-This package provides a modern library for regular expressions.
+This package provides a builder for regular expressions.
 
 ## Installation
 
 Run
 ```sh
-composer require flexic/regex
+composer require flexic/regex-builder
 ```
 
 # Usage
-
-- Documentation about Pattern: [Pattern.md](./docs/Pattern.md)
-- How to use: [HowToUse.md](./docs/HowToUse.md)
-- Method signatures: [MethodSignatures.md](./docs/MethodSignatures.md)
-- Predefined patterns: [PredefinedPattern.md](./docs/PredefinedPattern.md)
-- Examples: [Examples.md](./docs/Examples.md)
 
 ----
 ### License
