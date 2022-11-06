@@ -14,8 +14,15 @@ class Pattern
         $this->collection = new Collection($expressions);
     }
 
-    public function add(Expr $expression): void
+    public function add(Expr ...$expression): void
     {
-        $this->collection->add($expression);
+        foreach ($expression as $expr) {
+            $this->collection->add($expr);
+        }
+    }
+
+    public function __toString(): string
+    {
+        return (string) $this->collection;
     }
 }
