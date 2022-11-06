@@ -21,8 +21,9 @@ class Pattern
         }
     }
 
-    public function __toString(): string
+    /** @return array<Expr> */
+    public function all(): array
     {
-        return (string) $this->collection;
+        return $this->collection->all();
     }
 }

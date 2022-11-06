@@ -28,15 +28,14 @@ final class Collection
         }
     }
 
-    public function __toString(): string
-    {
-        return \implode('', \array_map(static function (Expr $expr) {
-            return (string) $expr;
-        }, $this->collection));
-    }
-
     public function add(Expr $expr): void
     {
         $this->collection[] = $expr;
+    }
+
+    /** @return array<Expr> */
+    public function all(): array
+    {
+        return $this->collection;
     }
 }
