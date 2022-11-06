@@ -1,12 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * Copyright (c) 2022-2022 Flexic-Systems
+ *
+ * @author Hendrik Legge <hendrik.legge@themepoint.de>
+ *
+ * @version 1.0.0
+ */
+
 namespace Flexic\RegexBuilder\BuildInterface\Expression;
 
 abstract class Expression extends Expr
 {
-    readonly private string $expression;
+    private readonly string $expression;
 
-    public function __construct(string $expression) {
+    public function __construct(string $expression)
+    {
         $this->expression = $expression;
     }
 

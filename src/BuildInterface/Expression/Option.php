@@ -1,16 +1,28 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * Copyright (c) 2022-2022 Flexic-Systems
+ *
+ * @author Hendrik Legge <hendrik.legge@themepoint.de>
+ *
+ * @version 1.0.0
+ */
+
 namespace Flexic\RegexBuilder\BuildInterface\Expression;
 
 abstract class Option extends Expr
 {
     public const DIVIDER = '|';
 
-    readonly private array $expressions;
+    private readonly array $expressions;
 
-    /** @param array<Expr> $expressions */
+    /**
+     * @param array<Expr> $expressions
+     */
     public function __construct(
-        array $expressions
+        array $expressions,
     ) {
         $this->expressions = $expressions;
     }
