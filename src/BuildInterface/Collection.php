@@ -33,7 +33,9 @@ final class Collection
         $this->collection[] = $expr;
     }
 
-    /** @return array<Expr> */
+    /**
+     * @return array<Expr>
+     */
     public function all(): array
     {
         return $this->collection;

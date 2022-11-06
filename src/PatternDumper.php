@@ -1,13 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * Copyright (c) 2022-2022 Flexic-Systems
+ *
+ * @author Hendrik Legge <hendrik.legge@themepoint.de>
+ *
+ * @version 1.0.0
+ */
+
 namespace Flexic\RegexBuilder;
 
 use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
 
-class PatternDumper
+final class PatternDumper
 {
     public function __construct(
-        readonly private Pattern $pattern
+        readonly private Pattern $pattern,
     ) {
     }
 

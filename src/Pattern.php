@@ -1,13 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * Copyright (c) 2022-2022 Flexic-Systems
+ *
+ * @author Hendrik Legge <hendrik.legge@themepoint.de>
+ *
+ * @version 1.0.0
+ */
+
 namespace Flexic\RegexBuilder;
 
 use Flexic\RegexBuilder\BuildInterface\Collection;
 use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
 
-class Pattern
+final class Pattern
 {
-    readonly private Collection $collection;
+    private readonly Collection $collection;
 
     public function __construct(array $expressions = [])
     {
@@ -21,7 +31,9 @@ class Pattern
         }
     }
 
-    /** @return array<Expr> */
+    /**
+     * @return array<Expr>
+     */
     public function all(): array
     {
         return $this->collection->all();
