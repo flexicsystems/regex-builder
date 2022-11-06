@@ -18,6 +18,6 @@ final class Digit extends ExpressionInterface
 {
     public function __construct(int|float $expression)
     {
-        parent::__construct((int) $expression);
+        parent::__construct((string) $expression);
     }
 }
