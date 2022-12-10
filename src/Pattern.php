@@ -16,7 +16,7 @@ use Flexic\RegexBuilder\Abstracts\Expr;
 
 final class Pattern
 {
-    private readonly array $expressions;
+    private array $expressions;
 
     /**
      * @param Expr[] $expressions
@@ -41,5 +41,12 @@ final class Pattern
     public function all(): array
     {
         return $this->expressions;
+    }
+
+    public function __toString(): string
+    {
+        return \implode('', \array_map(static function (Expr $expr): string {
+            return (string) $expr;
+        }, $this->all()));
     }
 }
