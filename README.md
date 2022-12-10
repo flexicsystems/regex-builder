@@ -2,6 +2,8 @@
 
 This package provides a builder for regular expressions.
 
+It is designed to make using regular expressions easier and more readable for developers.
+
 ## Installation
 
 Run
@@ -45,6 +47,13 @@ $pattern->toString(); // returns: '(?=(\<picture\>))(\w|\W)(?<=\<\/picture\>)'
 ```
 
 or used into [`flexix/regex`](https://github.com/flexicsystems/regex) to library.
+
+### Expression Lexing
+
+Regex-Builder provides a lexer to convert a string representation of a regular expression into an object representation.
+
+🚧 Lexer is currently under development and will be finished later.
+
 
 ----
 ### License
