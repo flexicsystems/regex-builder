@@ -10,11 +10,11 @@ declare(strict_types=1);
  * @version 1.0.0
  */
 
-namespace Flexic\RegexBuilder\BuildInterface;
+namespace Flexic\RegexBuilder;
 
 use Flexic\RegexBuilder\Abstracts\Expr;
 
-final class Collection
+final class ExpressionCollection
 {
     private array $collection = [];
 

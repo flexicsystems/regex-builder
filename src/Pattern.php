@@ -12,19 +12,19 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder;
 
-use Flexic\RegexBuilder\BuildInterface\Collection;
+use Flexic\RegexBuilder\ExpressionCollection;
 use Flexic\RegexBuilder\Abstracts\Expr;
 
 final class Pattern
 {
-    private readonly Collection $collection;
+    private readonly ExpressionCollection $collection;
 
     /**
      * @param Expr[] $expressions
      */
     public function __construct(array $expressions = [])
     {
-        $this->collection = new Collection($expressions);
+        $this->collection = new ExpressionCollection($expressions);
     }
 
     public function add(Expr ...$expression): void
