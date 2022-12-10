@@ -13,11 +13,16 @@ declare(strict_types=1);
 namespace Flexic\RegexBuilder\Expr;
 
 use Flexic\RegexBuilder\BuildInterface\Expression\Expression as ExpressionInterface;
+use Flexic\RegexBuilder\Util\SpecialCharacterEscaper;
 
 final class Literal extends ExpressionInterface
 {
     public function __construct(string $expression)
     {
-        parent::__construct((string) $expression); // ToDo: quote regex special characters
+        parent::__construct(
+            SpecialCharacterEscaper::escape(
+                (string) $expression
+            )
+        );
     }
 }

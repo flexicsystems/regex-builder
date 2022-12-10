@@ -19,6 +19,9 @@ final class Pattern
 {
     private readonly Collection $collection;
 
+    /**
+     * @param Expr[] $expressions
+     */
     public function __construct(array $expressions = [])
     {
         $this->collection = new Collection($expressions);
