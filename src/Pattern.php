@@ -12,25 +12,26 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder;
 
-use Flexic\RegexBuilder\ExpressionCollection;
 use Flexic\RegexBuilder\Abstracts\Expr;
 
 final class Pattern
 {
-    private readonly ExpressionCollection $collection;
+    private readonly array $expressions;
 
     /**
      * @param Expr[] $expressions
      */
     public function __construct(array $expressions = [])
     {
-        $this->collection = new ExpressionCollection($expressions);
+        foreach ($expressions as $expr) {
+            $this->add($expr);
+        }
     }
 
     public function add(Expr ...$expression): void
     {
         foreach ($expression as $expr) {
-            $this->collection->add($expr);
+            $this->expressions[] = $expr;
         }
     }
 
@@ -39,6 +40,6 @@ final class Pattern
      */
     public function all(): array
     {
-        return $this->collection->all();
+        return $this->expressions;
     }
 }
