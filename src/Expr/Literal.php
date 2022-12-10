@@ -21,8 +21,8 @@ final class Literal extends ExpressionInterface
     {
         parent::__construct(
             SpecialCharacterEscaper::escape(
-                (string) $expression
-            )
+                (string) $expression,
+            ),
         );
     }
 }
