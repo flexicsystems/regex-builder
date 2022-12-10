@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\BuildInterface;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
+use Flexic\RegexBuilder\Abstracts\Expr;
 
 final class Collection
 {

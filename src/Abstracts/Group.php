@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @version 1.0.0
  */
 
-namespace Flexic\RegexBuilder\BuildInterface\Expression;
+namespace Flexic\RegexBuilder\Abstracts;
 
 abstract class Group extends Expr
 {

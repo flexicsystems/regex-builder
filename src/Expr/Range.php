@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Range as RangeInterface;
+use Flexic\RegexBuilder\Abstracts\Range as RangeInterface;
 
 final class Range extends RangeInterface
 {

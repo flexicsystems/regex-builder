@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr\Count;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Counter as CounterInterface;
+use Flexic\RegexBuilder\Abstracts\Counter as CounterInterface;
 
 final class Between extends CounterInterface
 {

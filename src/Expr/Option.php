@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Option as OptionInterface;
+use Flexic\RegexBuilder\Abstracts\Option as OptionInterface;
 
 final class Option extends OptionInterface
 {

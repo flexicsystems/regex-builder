@@ -12,8 +12,8 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
-use Flexic\RegexBuilder\BuildInterface\Expression\Selection as SelectionInterface;
+use Flexic\RegexBuilder\Abstracts\Expr;
+use Flexic\RegexBuilder\Abstracts\Selection as SelectionInterface;
 
 final class NotInSelection extends SelectionInterface
 {

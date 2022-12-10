@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Enclosed as EnclosedInterface;
+use Flexic\RegexBuilder\Abstracts\Enclosed as EnclosedInterface;
 
 final class Enclosed extends EnclosedInterface
 {

@@ -13,7 +13,7 @@ declare(strict_types=1);
 namespace Flexic\RegexBuilder;
 
 use Flexic\RegexBuilder\BuildInterface\Collection;
-use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
+use Flexic\RegexBuilder\Abstracts\Expr;
 
 final class Pattern
 {

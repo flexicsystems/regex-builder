@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr\Marker;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Expression as ExpressionInterface;
+use Flexic\RegexBuilder\Abstracts\Expression as ExpressionInterface;
 
 final class Tab extends ExpressionInterface
 {

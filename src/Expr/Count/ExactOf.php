@@ -12,8 +12,8 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr\Count;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Counter as CounterInterface;
-use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
+use Flexic\RegexBuilder\Abstracts\Counter as CounterInterface;
+use Flexic\RegexBuilder\Abstracts\Expr;
 
 final class ExactOf extends CounterInterface
 {

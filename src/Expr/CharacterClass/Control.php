@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr\CharacterClass;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\CharacterClass as CharacterClassInterface;
+use Flexic\RegexBuilder\Abstracts\CharacterClass as CharacterClassInterface;
 use Flexic\RegexBuilder\Expr\Expression;
 
 final class Control extends CharacterClassInterface

@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Selection as SelectionInterface;
+use Flexic\RegexBuilder\Abstracts\Selection as SelectionInterface;
 
 final class InSelection extends SelectionInterface
 {

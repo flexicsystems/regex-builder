@@ -10,11 +10,15 @@ declare(strict_types=1);
  * @version 1.0.0
  */
 
-namespace Flexic\RegexBuilder\BuildInterface\Expression;
+namespace Flexic\RegexBuilder\Abstracts;
 
-abstract class CharacterClass extends Expr
+abstract class Selection extends Expr
 {
-    private const FORMAT = '[[:%s:]]';
+    private const START_DELIMITER = '[';
+
+    private const END_DELIMITER = ']';
+
+    private const FORMAT = self::START_DELIMITER . '%s' . self::END_DELIMITER;
 
     public function __construct(
         readonly private Expr $expression,

@@ -12,8 +12,8 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
-use Flexic\RegexBuilder\BuildInterface\Expression\Expression as ExpressionInterface;
+use Flexic\RegexBuilder\Abstracts\Expr;
+use Flexic\RegexBuilder\Abstracts\Expression as ExpressionInterface;
 
 final class ZeroOrMoreOf extends ExpressionInterface
 {

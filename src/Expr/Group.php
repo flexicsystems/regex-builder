@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Group as GroupInterface;
+use Flexic\RegexBuilder\Abstracts\Group as GroupInterface;
 
 final class Group extends GroupInterface
 {

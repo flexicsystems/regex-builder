@@ -12,8 +12,8 @@ declare(strict_types=1);
 
 namespace Flexic\RegexBuilder\Expr\LookAround;
 
-use Flexic\RegexBuilder\BuildInterface\Expression\Enclosed as EnclosedInterface;
-use Flexic\RegexBuilder\BuildInterface\Expression\Expr;
+use Flexic\RegexBuilder\Abstracts\Enclosed as EnclosedInterface;
+use Flexic\RegexBuilder\Abstracts\Expr;
 use Flexic\RegexBuilder\Expr\Expression;
 use Flexic\RegexBuilder\Expr\Group;
 
