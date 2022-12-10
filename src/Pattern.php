@@ -28,6 +28,13 @@ final class Pattern
         }
     }
 
+    public function __toString(): string
+    {
+        return \implode('', \array_map(static function (Expr $expr): string {
+            return (string) $expr;
+        }, $this->all()));
+    }
+
     public function add(Expr ...$expression): void
     {
         foreach ($expression as $expr) {
@@ -41,12 +48,5 @@ final class Pattern
     public function all(): array
     {
         return $this->expressions;
-    }
-
-    public function __toString(): string
-    {
-        return \implode('', \array_map(static function (Expr $expr): string {
-            return (string) $expr;
-        }, $this->all()));
     }
 }
