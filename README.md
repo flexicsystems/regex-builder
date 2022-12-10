@@ -41,7 +41,7 @@ $pattern->add(
 Patterns build with Regex-Builder can be converted to a string representation of a regular expression.
 
 ```php
-$pattern->toString(); // returns: '(?=(<picture>))([\\w\\W])(?=(</picture>))'
+$pattern->toString(); // returns: '(?=(\<picture\>))(\w|\W)(?<=\<\/picture\>)'
 ```
 
 or used into [`flexix/regex`](https://github.com/flexicsystems/regex) to library.
