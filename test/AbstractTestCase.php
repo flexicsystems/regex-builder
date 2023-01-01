@@ -10,10 +10,15 @@ declare(strict_types=1);
  * @version 1.0.0
  */
 
-namespace Flexic\RegexBuilder\Expr;
+namespace Flexic\RegexBuilder\Test;
 
-use Flexic\RegexBuilder\Abstracts\Option as OptionInterface;
+use PHPUnit\Framework;
 
-final class Option extends OptionInterface
+/**
+ * @internal
+ *
+ * @coversNothing
+ */
+abstract class AbstractTestCase extends Framework\TestCase
 {
 }
