@@ -43,17 +43,18 @@ $pattern->add(
 Patterns build with Regex-Builder can be converted to a string representation of a regular expression.
 
 ```php
-$pattern->toString(); // returns: '(?=(\<picture\>))(\w|\W)(?<=\<\/picture\>)'
+$patternString = (string) $pattern; // returns: '(?=(\<picture\>))(\w|\W)(?<=\<\/picture\>)'
 ```
 
 or used into [`flexix/regex`](https://github.com/flexicsystems/regex) to library.
+
+At [Expressions.md](Expressions.md) you can find a list of all available expressions.
 
 ### Expression Lexing
 
 Regex-Builder provides a lexer to convert a string representation of a regular expression into an object representation.
 
 🚧 Lexer is currently under development and will be finished later.
-
 
 ----
 ### License
